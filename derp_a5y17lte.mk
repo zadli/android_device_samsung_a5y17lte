@@ -23,19 +23,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common AOSiP stuff.
+$(call inherit-product, vendor/aosip/config/common.mk)
 
 # Boot animation
 TARGET_BOOTANIMATION_PRELOAD := true
 TARGET_BOOTANIMATION_TEXTURE_CACHE := true
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
+TARGET_BOOT_ANIMATION_RES := 1080
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := lineage_a5y17lte
+PRODUCT_NAME := derp_a5y17lte
 PRODUCT_DEVICE := a5y17lte
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-A520F
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
+TARGET_GAPPS_ARCH := arm64

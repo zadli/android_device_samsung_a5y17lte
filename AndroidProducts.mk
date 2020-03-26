@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_a5y17lte.mk
+    $(LOCAL_DIR)/derp_a5y17lte.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_a5y17lte-userdebug \
-    lineage_a5y17lte-user \
-    lineage_a5y17lte-eng
+    derp_a5y17lte-userdebug \
+    derp_a5y17lte-user \
+    derp_a5y17lte-eng
